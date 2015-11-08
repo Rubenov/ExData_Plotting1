@@ -1,4 +1,6 @@
-# As only data from the dates 2007-02-01 to 2007-02-02 are going to be used, the # data from the begining till the last date are read, so that  an excesive use   # of system memory is avoided
+# As only data from the dates 2007-02-01 to 2007-02-02 are going to be used,
+# the data from the begining till the last date are read, so that  an excesive
+# use of system memory is avoided
 
 data <- read.table("household_power_consumption.txt",sep=";",stringsAsFactors = F,dec=".",na.strings="?",nrow=69517,col.names =c("Date","Time","Global_active_power","Global_reactive_power","Voltage","Global_intensity","Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
